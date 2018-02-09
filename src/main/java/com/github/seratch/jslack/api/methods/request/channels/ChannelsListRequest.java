@@ -10,4 +10,6 @@ public class ChannelsListRequest implements SlackApiRequest {
 
     private String token;
     private Integer excludeArchived;
+    private Integer limit;
+    private String cursor;
 }

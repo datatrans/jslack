@@ -18,6 +18,8 @@ public class Channel {
     private boolean member;
     @SerializedName("is_general")
     private boolean general;
+    @SerializedName("is_private")
+    private boolean privateChannel;
     private String lastRead;
     private Latest latest;
     private Integer unreadCount;

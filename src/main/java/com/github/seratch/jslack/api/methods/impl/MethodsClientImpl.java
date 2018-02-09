@@ -205,6 +205,8 @@ public class MethodsClientImpl implements MethodsClient {
         FormBody.Builder form = new FormBody.Builder();
         setIfNotNull("token", req.getToken(), form);
         setIfNotNull("exclude_archived", req.getExcludeArchived(), form);
+        setIfNotNull("limit", req.getLimit(), form);
+        setIfNotNull("cursor", req.getCursor(), form);
         return doPostForm(form, Methods.CHANNELS_LIST, ChannelsListResponse.class);
     }
 
@@ -1320,6 +1322,8 @@ public class MethodsClientImpl implements MethodsClient {
         FormBody.Builder form = new FormBody.Builder();
         setIfNotNull("token", req.getToken(), form);
         setIfNotNull("presence", req.getPresence(), form);
+        setIfNotNull("limit", req.getLimit(), form);
+        setIfNotNull("cursor", req.getCursor(), form);
         return doPostForm(form, Methods.USERS_LIST, UsersListResponse.class);
     }
 

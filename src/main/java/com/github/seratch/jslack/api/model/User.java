@@ -26,6 +26,8 @@ public class User {
     private boolean restricted;
     @SerializedName("is_ultra_restricted")
     private boolean ultraRestricted;
+    @SerializedName("is_bot")
+    private boolean isBot;
     private boolean has2fa;
     private String twoFactorType;
     private boolean hasFiles;

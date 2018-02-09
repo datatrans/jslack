@@ -10,4 +10,6 @@ public class UsersListRequest implements SlackApiRequest {
 
     private String token;
     private Integer presence;
+    private Integer limit;
+    private String cursor;
 }
