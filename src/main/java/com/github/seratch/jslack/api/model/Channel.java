@@ -25,6 +25,8 @@ public class Channel {
     private Integer unreadCount;
     private Integer unreadCountDisplay;
     private List<String> members;
+    @SerializedName("num_members")
+    private int memberCount;
     private Topic topic;
     private Purpose purpose;
 }
