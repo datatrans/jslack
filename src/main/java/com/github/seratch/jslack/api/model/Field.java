@@ -1,14 +1,15 @@
 package com.github.seratch.jslack.api.model;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 /**
  * https://api.slack.com/docs/message-attachments
  */
 @Data
 @Builder
+@NoArgsConstructor(access = AccessLevel.PUBLIC)
+@AllArgsConstructor(access = AccessLevel.PACKAGE)
 public class Field {
 
     /**
